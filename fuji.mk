@@ -16,8 +16,8 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# qcom common
-$(call inherit-product, device/sony/qcom-common/qcom-common.mk)
+# qcom common - dirty path fix for cfx
+$(call inherit-product, device/sony/qcom-common-fuji/qcom-common.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
